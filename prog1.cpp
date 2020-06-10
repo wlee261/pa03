@@ -3,7 +3,8 @@
 
 #include<iostream>
 #include <sstream>
-#include<PA3_dataset.txt>
+#include <String>
+//#include<PA3_dataset.txt>
 using namespace std;
 
 //fix printHEight
