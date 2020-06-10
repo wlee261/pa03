@@ -153,6 +153,7 @@ public:
         if(t->height == 1)
         	root = t;
         cout << "root is " << root << ", height is " << t->height << endl;
+	cout << "inserted " << input;
         return t;
     }
 
@@ -230,13 +231,12 @@ public:
 
     void print() 
     {
-    	cout << "in print" << endl;
     	printHelper(root);
     }
 
     void printHelper(node* t)
     {
-    	cout << "in printhelper" << endl;
+    
     	cout << "(";
         if(t == NULL)
             return;
@@ -309,7 +309,7 @@ int main(int argc, char* argv[])
         result.push_back(substr);
     }
 
-    for(int i = result.size()-1; i >= 0; i--)
+    for(int i = 0; i < result.size(); i++)
     {
     	//cout << result[i] << endl;
         if(result[i].substr(0,5) == "searc" || result[i].substr(0,5) == " sear"){
